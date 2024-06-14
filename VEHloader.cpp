@@ -437,7 +437,7 @@ LONG WINAPI ExceptionHandler(EXCEPTION_POINTERS* ExceptionInfo) {
             //    saveShellcodeToFile(fileName, shellcode, shellcodeSize);
             //    c1 = shellcode[0xf];
             //}
-            //ExceptionInfo->ContextRecord->EFlags |= 0x100;
+            ExceptionInfo->ContextRecord->EFlags |= 0x100;
         }
         else {
             //outnum++;
